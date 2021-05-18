@@ -1,0 +1,48 @@
+##Voting App
+#Create Pod
+kubectl create -f voting-app-pod.yaml
+
+#Create Service
+kubectl create -f voting-app-service.yaml
+
+#Check Objects
+kubectl get pods,svc
+
+#Get Minikube Service Url
+minikube service voting-service --url
+
+##Redis
+#Create Pod
+kubectl create -f redis-pod.yaml
+
+#Create Service
+kubectl create -f redis-service.yaml
+
+#Check Objects
+kubectl get pods,svc
+
+##Postgres
+#Create Pod
+kubectl create -f postgres-pod.yaml
+
+#Create Service
+kubectl create -f postgres-service.yaml
+
+##Worker
+#Create Pod
+kubectl create -f worker-pod.yaml
+
+##result-voting-app
+#Create Pod
+kubectl create -f result-app-pod.yaml
+
+#Create Service
+kubectl create -f result-service.yaml
+
+#Check Objects
+kubectl get pods,svc
+
+#Get Minikube Service Url
+minikube service voting-service --url
+minikube service result-service --url
+
